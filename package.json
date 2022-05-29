@@ -1,0 +1,35 @@
+{
+  "name": "wk-pages",
+  "version": "0.1.0",
+  "description": "static web workflow",
+  "keywords": [
+    "wk-pages",
+    "zce"
+  ],
+  "repository": "KKandLL-Forever/wk-pages",
+  "license": "MIT",
+  "author": "KKandLL-Forever <clay1wang@gmail.com> (http://kkanll.com)",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "lint": "standard --fix",
+    "prepare": "npm run lint"
+  },
+  "renovate": {
+    "extends": [
+      "zce"
+    ]
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "standard": "16.0.4"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  }
+}
