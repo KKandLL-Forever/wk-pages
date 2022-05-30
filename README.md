@@ -3,48 +3,40 @@
 [![License][license-img]][license-url]
 [![NPM Downloads][downloads-img]][downloads-url]
 [![NPM Version][version-img]][version-url]
-[![Dependency Status][dependency-img]][dependency-url]
-[![Code Style][style-img]][style-url]
 
 > static web workflow
 
 ## Installation
 
 ```shell
-$ npm install wk-pages
+$ npm install wk-pages-try
 
 # or yarn
-$ yarn add wk-pages
+$ yarn add wk-pages-try
 ```
 
 ## Usage
 
 <!-- TODO: Introduction of Usage -->
-
-```javascript
-const wkPages = require('wk-pages')
-const result = wkPages('w')
-// result => 'w@zce.me'
+in`package.json`,add these scripts
+```json
+{
+  "scripts": {
+    "clean": "wk-pages-try clean",
+    "build": "wk-pages-try build",
+    "dev": "wk-pages-try develop"
+  }
+}
 ```
+then
+```shell
+$ npm run clean
+# or
+$ npm run clean
+# or
+$ npm run clean
 
-## API
-
-<!-- TODO: Introduction of API -->
-
-### wkPages(input, options?)
-
-#### input
-
-- Type: `string`
-- Details: name string
-
-#### options
-
-##### host
-
-- Type: `string`
-- Details: host string
-- Default: `'zce.me'`
+```
 
 ## Related
 
@@ -69,11 +61,7 @@ const result = wkPages('w')
 
 [license-img]: https://img.shields.io/github/license/KKandLL-Forever/wk-pages
 [license-url]: https://github.com/KKandLL-Forever/wk-pages/blob/master/LICENSE
-[downloads-img]: https://img.shields.io/npm/dm/wk-pages
-[downloads-url]: https://npm.im/wk-pages
-[version-img]: https://img.shields.io/npm/v/wk-pages
-[version-url]: https://npm.im/wk-pages
-[dependency-img]: https://img.shields.io/librariesio/github/KKandLL-Forever/wk-pages
-[dependency-url]: https://github.com/KKandLL-Forever/wk-pages
-[style-img]: https://img.shields.io/badge/code_style-standard-brightgreen
-[style-url]: https://standardjs.com
+[downloads-img]: https://img.shields.io/npm/dm/wk-pages-try
+[downloads-url]: https://npm.im/wk-pages-try
+[version-img]: https://img.shields.io/npm/v/wk-pages-try
+[version-url]: https://npm.im/wk-pages-try
