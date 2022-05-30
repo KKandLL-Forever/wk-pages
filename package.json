@@ -3,16 +3,17 @@
   "version": "0.1.0",
   "description": "static web workflow",
   "keywords": [
-    "wk-pages",
-    "zce"
+    "wk-pages"
   ],
   "repository": "KKandLL-Forever/wk-pages",
   "license": "MIT",
-  "author": "KKandLL-Forever <clay1wang@gmail.com> (http://kkanll.com)",
+  "author": "KKandLL-Forever <clay1wang@gmail.com> ",
   "main": "lib/index.js",
   "files": [
-    "lib"
+    "lib",
+    "bin"
   ],
+  "bin": "bin/wk-pages.js",
   "scripts": {
     "lint": "standard --fix",
     "prepare": "npm run lint"
@@ -22,7 +23,24 @@
       "zce"
     ]
   },
-  "dependencies": {},
+  "dependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^6.1.0",
+    "gulp-load-plugins": "^2.0.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-swig": "^0.9.1",
+    "gulp-uglify": "^3.0.2",
+    "gulp-useref": "^3.1.6",
+    "sass": "^1.52.1"
+  },
   "devDependencies": {
     "standard": "16.0.4"
   },
